@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Pricing - Wheels On Rent</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Wheels<span>OnRent</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#vehicles">Vehicles</a></li>
+                    <li><a href="#" class="active">Pricing</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="auth.html">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Hero Section -->
+    <section class="pricing-hero">
+        <div class="container">
+            <div class="pricing-hero-content">
+                <h1>Our Rental Pricing</h1>
+                <p>Choose from our wide range of vehicles at competitive prices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Tabs Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-tabs">
+                <button class="tab-btn active" data-filter="all">All Vehicles</button>
+                <button class="tab-btn" data-filter="2-wheeler">2 Wheelers</button>
+                <button class="tab-btn" data-filter="4-wheeler">4 Wheelers</button>
+            </div>
+
+            <!-- Pricing Filter Options -->
+            <div class="pricing-filters">
+                <div class="filter-group">
+                    <label for="duration">Rental Duration:</label>
+                    <select id="duration" name="duration">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-by">Sort By:</label>
+                    <select id="sort-by" name="sort-by">
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="popularity">Popularity</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Pricing Cards Container -->
+            <div class="pricing-container">
+                <!-- 2 Wheelers -->
+                <div class="pricing-card" data-category="2-wheeler">
+                    <div class="pricing-img">
+                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sports Bike">
+                        <span class="pricing-tag">Popular</span>
+                    </div>
+                    <div class="pricing-details">
+                        <h3>Royal Enfield Classic 350</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 350cc</span>
+                            <span><i class="fas fa-gas-pump"></i> 35 km/l</span>
+                        </div>
+                        <div class="pricing-options">
+                            <div class="pricing-option active" data-duration="daily">
+                                <h4>Daily Rate</h4>
+                                <div class="price">₹1,200<span>/day</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> Unlimited kilometers</li>
+                                    <li><i class="fas fa-check"></i> Helmet included</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> ₹2,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="weekly">
+                                <h4>Weekly Rate</h4>
+                                <div class="price">₹6,500<span>/week</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> Unlimited kilometers</li>
+                                    <li><i class="fas fa-check"></i> Helmet included</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> ₹3,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="monthly">
+                                <h4>Monthly Rate</h4>
+                                <div class="price">₹22,000<span>/month</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> Unlimited kilometers</li>
+                                    <li><i class="fas fa-check"></i> Helmet included</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Free maintenance</li>
+                                    <li><i class="fas fa-check"></i> ₹5,000 security deposit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary book-btn" data-vehicle="Royal Enfield Classic 350">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card" data-category="2-wheeler">
+                    <div class="pricing-img">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Scooter">
+                    </div>
+                    <div class="pricing-details">
+                        <h3>Honda Activa 6G</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 110cc</span>
+                            <span><i class="fas fa-gas-pump"></i> 55 km/l</span>
+                        </div>
+                        <div class="pricing-options">
+                            <div class="pricing-option active" data-duration="daily">
+                                <h4>Daily Rate</h4>
+                                <div class="price">₹500<span>/day</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> Unlimited kilometers</li>
+                                    <li><i class="fas fa-check"></i> Helmet included</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> ₹1,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="weekly">
+                                <h4>Weekly Rate</h4>
+                                <div class="price">₹2,800<span>/week</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> Unlimited kilometers</li>
+                                    <li><i class="fas fa-check"></i> Helmet included</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> ₹1,500 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="monthly">
+                                <h4>Monthly Rate</h4>
+                                <div class="price">₹9,000<span>/month</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> Unlimited kilometers</li>
+                                    <li><i class="fas fa-check"></i> Helmet included</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Free maintenance</li>
+                                    <li><i class="fas fa-check"></i> ₹2,000 security deposit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary book-btn" data-vehicle="Honda Activa 6G">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card" data-category="2-wheeler">
+                    <div class="pricing-img">
+                        <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sports Bike">
+                        <span class="pricing-tag">Premium</span>
+                    </div>
+                    <div class="pricing-details">
+                        <h3>KTM Duke 390</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 390cc</span>
+                            <span><i class="fas fa-gas-pump"></i> 30 km/l</span>
+                        </div>
+                        <div class="pricing-options">
+                            <div class="pricing-option active" data-duration="daily">
+                                <h4>Daily Rate</h4>
+                                <div class="price">₹1,800<span>/day</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> Unlimited kilometers</li>
+                                    <li><i class="fas fa-check"></i> Helmet included</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> ₹3,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="weekly">
+                                <h4>Weekly Rate</h4>
+                                <div class="price">₹10,000<span>/week</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> Unlimited kilometers</li>
+                                    <li><i class="fas fa-check"></i> Helmet included</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> ₹4,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="monthly">
+                                <h4>Monthly Rate</h4>
+                                <div class="price">₹35,000<span>/month</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> Unlimited kilometers</li>
+                                    <li><i class="fas fa-check"></i> Helmet included</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Free maintenance</li>
+                                    <li><i class="fas fa-check"></i> ₹6,000 security deposit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary book-btn" data-vehicle="KTM Duke 390">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- 4 Wheelers -->
+                <div class="pricing-card" data-category="4-wheeler">
+                    <div class="pricing-img">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sedan">
+                    </div>
+                    <div class="pricing-details">
+                        <h3>Maruti Suzuki Swift</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-user"></i> 5 Seater</span>
+                            <span><i class="fas fa-gas-pump"></i> 22 km/l</span>
+                        </div>
+                        <div class="pricing-options">
+                            <div class="pricing-option active" data-duration="daily">
+                                <h4>Daily Rate</h4>
+                                <div class="price">₹1,500<span>/day</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> 150 km/day limit</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Insurance included</li>
+                                    <li><i class="fas fa-check"></i> ₹5,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="weekly">
+                                <h4>Weekly Rate</h4>
+                                <div class="price">₹9,000<span>/week</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> 1,200 km/week limit</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Insurance included</li>
+                                    <li><i class="fas fa-check"></i> ₹7,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="monthly">
+                                <h4>Monthly Rate</h4>
+                                <div class="price">₹30,000<span>/month</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> 3,000 km/month limit</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Insurance included</li>
+                                    <li><i class="fas fa-check"></i> Free maintenance</li>
+                                    <li><i class="fas fa-check"></i> ₹10,000 security deposit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary book-btn" data-vehicle="Maruti Suzuki Swift">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card" data-category="4-wheeler">
+                    <div class="pricing-img">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="SUV">
+                        <span class="pricing-tag">Premium</span>
+                    </div>
+                    <div class="pricing-details">
+                        <h3>Hyundai Creta</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-user"></i> 5 Seater</span>
+                            <span><i class="fas fa-gas-pump"></i> 18 km/l</span>
+                        </div>
+                        <div class="pricing-options">
+                            <div class="pricing-option active" data-duration="daily">
+                                <h4>Daily Rate</h4>
+                                <div class="price">₹2,500<span>/day</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> 150 km/day limit</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Insurance included</li>
+                                    <li><i class="fas fa-check"></i> ₹8,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="weekly">
+                                <h4>Weekly Rate</h4>
+                                <div class="price">₹15,000<span>/week</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> 1,200 km/week limit</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Insurance included</li>
+                                    <li><i class="fas fa-check"></i> ₹10,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="monthly">
+                                <h4>Monthly Rate</h4>
+                                <div class="price">₹50,000<span>/month</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> 3,000 km/month limit</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Insurance included</li>
+                                    <li><i class="fas fa-check"></i> Free maintenance</li>
+                                    <li><i class="fas fa-check"></i> ₹15,000 security deposit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary book-btn" data-vehicle="Hyundai Creta">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card" data-category="4-wheeler">
+                    <div class="pricing-img">
+                        <img src="https://images.unsplash.com/photo-1617624085810-3df2165bd11b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Luxury Car">
+                        <span class="pricing-tag">Luxury</span>
+                    </div>
+                    <div class="pricing-details">
+                        <h3>Toyota Innova Crysta</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-user"></i> 7 Seater</span>
+                            <span><i class="fas fa-gas-pump"></i> 14 km/l</span>
+                        </div>
+                        <div class="pricing-options">
+                            <div class="pricing-option active" data-duration="daily">
+                                <h4>Daily Rate</h4>
+                                <div class="price">₹3,500<span>/day</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> 150 km/day limit</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Insurance included</li>
+                                    <li><i class="fas fa-check"></i> ₹10,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="weekly">
+                                <h4>Weekly Rate</h4>
+                                <div class="price">₹21,000<span>/week</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> 1,200 km/week limit</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Insurance included</li>
+                                    <li><i class="fas fa-check"></i> ₹15,000 security deposit</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-option" data-duration="monthly">
+                                <h4>Monthly Rate</h4>
+                                <div class="price">₹70,000<span>/month</span></div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i> 3,000 km/month limit</li>
+                                    <li><i class="fas fa-check"></i> Roadside assistance</li>
+                                    <li><i class="fas fa-check"></i> Insurance included</li>
+                                    <li><i class="fas fa-check"></i> Free maintenance</li>
+                                    <li><i class="fas fa-check"></i> ₹20,000 security deposit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary book-btn" data-vehicle="Toyota Innova Crysta">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="booking-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Book Your Vehicle</h2>
+            <div id="selected-vehicle-info"></div>
+            <form id="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pickup-date">Pickup Date</label>
+                        <input type="date" id="pickup-date" name="pickup-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="return-date">Return Date</label>
+                        <input type="date" id="return-date" name="return-date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pickup-location">Pickup Location</label>
+                    <select id="pickup-location" name="pickup-location" required>
+                        <option value="">Select a location</option>
+                        <option value="bangalore-central">Bangalore Central</option>
+                        <option value="bangalore-airport">Bangalore Airport</option>
+                        <option value="electronic-city">Electronic City</option>
+                        <option value="whitefield">Whitefield</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="return-location">Return Location</label>
+                    <select id="return-location" name="return-location" required>
+                        <option value="">Select a location</option>
+                        <option value="bangalore-central">Bangalore Central</option>
+                        <option value="bangalore-airport">Bangalore Airport</option>
+                        <option value="electronic-city">Electronic City</option>
+                        <option value="whitefield">Whitefield</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="additional-options">Additional Options</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="insurance" name="insurance" value="insurance">
+                            <label for="insurance">Additional Insurance (₹500)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gps" name="gps" value="gps">
+                            <label for="gps">GPS Navigation (₹200/day)</label>
+                        </div>
+                        <div class="checkbox-item" id="helmet-option" style="display: none;">
+                            <input type="checkbox" id="extra-helmet" name="extra-helmet" value="extra-helmet">
+                            <label for="extra-helmet">Extra Helmet (₹100/day)</label>
+                        </div>
+                        <div class="checkbox-item" id="child-seat-option" style="display: none;">
+                            <input type="checkbox" id="child-seat" name="child-seat" value="child-seat">
+                            <label for="child-seat">Child Seat (₹300/day)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="driver-license">Driver's License Number</label>
+                    <input type="text" id="driver-license" name="driver-license" required>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests (Optional)</label>
+                    <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                </div>
+                <div class="booking-summary">
+                    <h3>Booking Summary</h3>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Base Rental:</span>
+                            <span id="base-rental">₹0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Additional Options:</span>
+                            <span id="additional-cost">₹0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Security Deposit:</span>
+                            <span id="security-deposit">₹0</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total Amount:</span>
+                            <span id="total-amount">₹0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group terms">
+                    <input type="checkbox" id="booking-terms" name="booking-terms" required>
+                    <label for="booking-terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Rental Policy</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Wheels<span>OnRent</span></h2>
+                    <p>Your trusted partner for vehicle rentals.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#vehicles">Vehicles</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wheels On Rent. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/pricing.js"></script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels On Rent - Vehicle Rental Service</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Wheels<span>OnRent</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#vehicles">Vehicles</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="auth.html">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Rent Your Perfect Ride Today</h1>
+                <p>Explore our wide range of 2-wheelers and 4-wheelers for all your travel needs</p>
+                <div class="hero-buttons">
+                    <a href="#vehicles" class="btn btn-primary">Explore Vehicles</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <h2>Find Your Ideal Vehicle</h2>
+                <form id="search-form">
+                    <div class="form-group">
+                        <label for="vehicle-type">Vehicle Type</label>
+                        <select id="vehicle-type" name="vehicle-type">
+                            <option value="all">All Vehicles</option>
+                            <option value="2-wheeler">2 Wheelers</option>
+                            <option value="4-wheeler">4 Wheelers</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup-date">Pickup Date</label>
+                        <input type="date" id="pickup-date" name="pickup-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="return-date">Return Date</label>
+                        <input type="date" id="return-date" name="return-date">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Vehicles Section -->
+    <section id="vehicles" class="vehicles-section">
+        <div class="container">
+            <h2 class="section-title">Our Featured Vehicles</h2>
+            <div class="vehicle-tabs">
+                <button class="tab-btn active" data-filter="all">All</button>
+                <button class="tab-btn" data-filter="2-wheeler">2 Wheelers</button>
+                <button class="tab-btn" data-filter="4-wheeler">4 Wheelers</button>
+            </div>
+            <div class="vehicles-container">
+                <!-- 2 Wheelers -->
+                <div class="vehicle-card" data-category="2-wheeler">
+                    <div class="vehicle-img">
+                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sports Bike">
+                        <span class="vehicle-tag">Popular</span>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Sports Bike</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 150cc</span>
+                            <span><i class="fas fa-gas-pump"></i> 40 km/l</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span>₹1,200</span> / day
+                        </div>
+                        <a href="pricing.html" class="btn btn-primary">Rent Now</a>
+                    </div>
+                </div>
+                <div class="vehicle-card" data-category="2-wheeler">
+                    <div class="vehicle-img">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Scooter">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>City Scooter</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-tachometer-alt"></i> 110cc</span>
+                            <span><i class="fas fa-gas-pump"></i> 45 km/l</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span>₹500</span> / day
+                        </div>
+                        <a href="pricing.html" class="btn btn-primary">Rent Now</a>
+                    </div>
+                </div>
+
+                <!-- 4 Wheelers -->
+                <div class="vehicle-card" data-category="4-wheeler">
+                    <div class="vehicle-img">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="SUV">
+                        <span class="vehicle-tag">Premium</span>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Premium SUV</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-user"></i> 7 Seater</span>
+                            <span><i class="fas fa-gas-pump"></i> 15 km/l</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span>₹2,500</span> / day
+                        </div>
+                        <a href="pricing.html" class="btn btn-primary">Rent Now</a>
+                    </div>
+                </div>
+                <div class="vehicle-card" data-category="4-wheeler">
+                    <div class="vehicle-img">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sedan">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Economy Sedan</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fas fa-user"></i> 5 Seater</span>
+                            <span><i class="fas fa-gas-pump"></i> 18 km/l</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span>₹1,500</span> / day
+                        </div>
+                        <a href="pricing.html" class="btn btn-primary">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="pricing.html" class="btn btn-secondary">View All Vehicles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Easy Booking</h3>
+                    <p>Book your vehicle with just a few clicks through our user-friendly platform.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Multiple Locations</h3>
+                    <p>Pick up and drop off your vehicle at any of our convenient locations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Insurance Coverage</h3>
+                    <p>All our vehicles come with comprehensive insurance for your peace of mind.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer support team is available round the clock to assist you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Us</h2>
+                    <p>Wheels On Rent is a premier vehicle rental service offering a wide range of 2-wheelers and 4-wheelers for all your transportation needs. With years of experience in the industry, we pride ourselves on providing well-maintained vehicles, competitive pricing, and exceptional customer service.</p>
+                    <p>Our mission is to make vehicle rental accessible, affordable, and hassle-free for everyone. Whether you need a bike for a quick city commute or an SUV for a family road trip, we've got you covered.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"The service was excellent! The bike was in perfect condition and the rental process was smooth and hassle-free."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"I rented an SUV for my family trip and it was a great experience. The vehicle was clean and well-maintained. Will definitely use their service again!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith">
+                        <div class="author-info">
+                            <h4>Jane Smith</h4>
+                            <p>Family Traveler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>123 Rental Street, Vehicle City, VC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>info@wheelsonrent.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Wheels<span>OnRent</span></h2>
+                    <p>Your trusted partner for vehicle rentals.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#vehicles">Vehicles</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wheels On Rent. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
